@@ -7,11 +7,13 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "watch-tailwind": "chokidar 'tailwind.js' --initial=true -c 'npm run watch'"
     },
     "devDependencies": {
         "autoprefixer": "^10.2.4",
         "axios": "^0.21",
+        "chokidar-cli": "^2.1.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.2.5",
