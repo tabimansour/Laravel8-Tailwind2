@@ -12,9 +12,9 @@
     <div><!-- content wrapper -->
         <div class="border-b border-gray-200 mx-0 my-5"><!-- start nav -->
             <nav class="m-5">
-                <div>
-                    <h1>
-                        <a href="/" class="text-tedzy">LOGO HERE</a>
+                <div class="justify-items-center">
+                    <h1 class="">
+                        <a href="/" class="text-5xl xl:text-tedzy m-4 2xl:text-yellow-500 xl:text-gray-700 md:text-red-900 lg:text-blue-900 text-red-800">LOGO HERE</a>
                     </h1>
                 </div>
                 <ul class="text-gray-700 text-lg uppercase mx-5">
@@ -46,7 +46,7 @@
         </div><!-- end nav -->
 
         <main class="p-16">
-            <div class="border flex justify-end items-center">
+            <div class="border flex justify-center md:justify-end items-center">
                 <a href="" class="mx-5 text-red-600 hover:to-red-800">Login</a>
                 <a href="" class="mx-5 text-red-600 hover:to-red-800">Sign-up</a>
             </div>
