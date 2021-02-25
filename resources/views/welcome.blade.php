@@ -45,8 +45,8 @@
             </nav>
         </div><!-- end nav -->
 
-        <main class="p-16">
-            <div class="border flex justify-center md:justify-end items-center">
+        <main class="p-16 bg-gray-100">
+            <div class="flex justify-center md:justify-end items-center">
                 <a href="" class="mx-5 text-red-600 hover:to-red-800">Login</a>
                 <a href="" class="mx-5 text-red-600 hover:to-red-800">Sign-up</a>
             </div>
@@ -60,11 +60,14 @@
                 <h4 class="text-2xl font-semibold mt-10 pb-2 border-b border-gray-200">Latest Tutorials</h4>
 
                 <div>
-                    <div><!-- cards go here -->
-                        <img src="{{ asset('/img/building-my-new-site-with-tailwind.jpg') }}" alt="Tailwind CSS" />
-                        <div>
-                            <span>Preparation for using Tailwind</span>
-                            <span>by Theo</span>
+                    <div class="bg-white rounded overflow-hidden shadow-md relative"><!-- cards go here -->
+                        <img src="{{ asset('/img/building-my-new-site-with-tailwind.jpg') }}" alt="Tailwind CSS" class="w-full h-64 object-cover" />
+                        <div class="m-4">
+                            <span class="font-bold">Preparation for using Tailwind</span>
+                            <span class="block text-gray-500 text-sm">by Theo</span>
+                        </div>
+                        <div class="bg-blue-100 text-tedzy text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2">
+                            <span>{{Carbon\Carbon::parse('17-12-2020')->diffForHumans()}}</span>
                         </div>
                     </div><!-- end of card -->
                 </div>
@@ -72,11 +75,14 @@
                 <h4 class="text-2xl font-semibold mt-10 pb-2 border-b border-gray-200">Popular News</h4>
 
                 <div>
-                    <div><!-- cards go here -->
-                        <img src="{{ asset('/img/Tailwind-logo1.jpg') }}" alt="Tailwind Tutorial" />
-                        <div>
-                            <span>Tailwind is the best</span>
-                            <span>by Theo</span>
+                    <div class="bg-white rounded overflow-hidden shadow-md relative"><!-- cards go here -->
+                        <img src="{{ asset('/img/Tailwind-logo1.jpg') }}" alt="Tailwind Tutorial" class="w-full h-64 object-cover" />
+                        <div class="m-4">
+                            <span class="font-bold">Tailwind is the best</span>
+                            <span class="block text-gray-500 text-sm">by Theo</span>
+                        </div>
+                        <div class="bg-blue-100 text-tedzy text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2">
+                            <span>{{Carbon\Carbon::parse('10-02-2021')->diffForHumans()}}</span>
                         </div>
                     </div><!-- end of card -->
                 </div>
