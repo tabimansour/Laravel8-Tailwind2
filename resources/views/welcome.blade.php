@@ -60,14 +60,36 @@
                 <h4 class="text-2xl font-semibold mt-10 pb-2 border-b border-gray-200">Latest Tutorials</h4>
 
                 <div>
-                    <div class="bg-white rounded overflow-hidden shadow-md relative"><!-- cards go here -->
+                    <div class="card"><!-- cards go here -->
                         <img src="{{ asset('/img/building-my-new-site-with-tailwind.jpg') }}" alt="Tailwind CSS" class="w-full h-64 object-cover" />
                         <div class="m-4">
                             <span class="font-bold">Preparation for using Tailwind</span>
                             <span class="block text-gray-500 text-sm">by Theo</span>
                         </div>
-                        <div class="bg-blue-100 text-tedzy text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2">
-                            <span>{{Carbon\Carbon::parse('17-12-2020')->diffForHumans()}}</span>
+                        <div class="badge">
+                            <span>{{Carbon\Carbon::parse('20201217')->diffForHumans()}}</span>
+                        </div>
+                    </div><!-- end of card -->
+
+                    <div class="card"><!-- cards go here -->
+                        <img src="{{ asset('/img/building-my-new-site-with-bootstrap.jpg') }}" alt="Bootstrap CSS" class="w-full h-64 object-cover" />
+                        <div class="m-4">
+                            <span class="font-bold">Preparation for using Bootstrap</span>
+                            <span class="block text-gray-500 text-sm">by Theo</span>
+                        </div>
+                        <div class="badge">
+                            <span>{{Carbon\Carbon::parse('20210122')->diffForHumans()}}</span>
+                        </div>
+                    </div><!-- end of card -->
+
+                    <div class="card"><!-- cards go here -->
+                        <img src="{{ asset('/img/bootstrap-vs-tailwind-css.jpg') }}" alt="Tailwind vs Bootstrap CSS" class="w-full h-64 object-cover" />
+                        <div class="m-4">
+                            <span class="font-bold">Tailwind 2 v/s Bootstrap 5</span>
+                            <span class="block text-gray-500 text-sm">by Theo</span>
+                        </div>
+                        <div class="badge">
+                            <span>{{Carbon\Carbon::parse('20210210')->diffForHumans()}}</span>
                         </div>
                     </div><!-- end of card -->
                 </div>
@@ -75,13 +97,13 @@
                 <h4 class="text-2xl font-semibold mt-10 pb-2 border-b border-gray-200">Popular News</h4>
 
                 <div>
-                    <div class="bg-white rounded overflow-hidden shadow-md relative"><!-- cards go here -->
+                    <div class="card"><!-- cards go here -->
                         <img src="{{ asset('/img/Tailwind-logo1.jpg') }}" alt="Tailwind Tutorial" class="w-full h-64 object-cover" />
                         <div class="m-4">
                             <span class="font-bold">Tailwind is the best</span>
                             <span class="block text-gray-500 text-sm">by Theo</span>
                         </div>
-                        <div class="bg-blue-100 text-tedzy text-xs uppercase font-bold rounded-full p-2 absolute top-2 left-2">
+                        <div class="badge">
                             <span>{{Carbon\Carbon::parse('10-02-2021')->diffForHumans()}}</span>
                         </div>
                     </div><!-- end of card -->
